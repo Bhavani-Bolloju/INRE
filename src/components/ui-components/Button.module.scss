@@ -1,0 +1,19 @@
+.btnOutline {
+  padding: 15px 40px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1.5px solid var(--color-border-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  svg {
+    width: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-grey-3);
+  }
+}

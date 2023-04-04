@@ -1,0 +1,41 @@
+.section-features {
+  grid-column: center-start/center-end;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 48px;
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--color-primary-1);
+    }
+  }
+
+  h2 {
+    align-self: center;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 4px solid var(--color-primary-1);
+    margin-bottom: 20px;
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(min-content, calc(1120px / 9)));
+    column-gap: 40px;
+  }
+
+  &__box-1 {
+    grid-column: 1/4;
+  }
+  &__box-2 {
+    grid-column: 4/7;
+  }
+  &__box-3 {
+    grid-column: 7/-1;
+  }
+}

@@ -1,0 +1,44 @@
+.header {
+  grid-column: center-start/center-end;
+  grid-row: 2/3;
+
+  background-image: linear-gradient(
+      120deg,
+      var(--color-primary-1) 0%,
+      var(--color-primary-1) 45%,
+      transparent 45%
+    ),
+    url(../Images/house-8.jpg);
+  height: 100%;
+  background-position: right;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+
+  margin: 32px 0;
+
+  h1 {
+    font-family: var(--font-heading);
+    width: 30%;
+    align-self: center;
+    justify-self: start;
+    margin-left: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.4;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 980px) {
+      font-size: 24px;
+    }
+
+    span {
+      color: #faff00;
+      font-weight: 600;
+    }
+  }
+}
