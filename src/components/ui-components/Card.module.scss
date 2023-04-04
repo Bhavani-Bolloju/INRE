@@ -1,12 +1,14 @@
 .card {
   padding: 20px;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.05);
+  height: inherit;
   min-height: fit-content;
   background-color: #fff;
   border-radius: 10px;
 
   @media screen and (max-width: 800px) {
     padding: 30px 50px;
+    width: 100%;
   }
 
   img {

@@ -4,39 +4,6 @@
   padding: 60px 30px 120px;
   display: flex;
   flex-direction: column;
-  // background-color: yellow;
-
-  &-container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    // background-color: red;
-    padding: 20px;
-
-    @media screen and (max-width: 1200px) {
-      width: 95%;
-    }
-
-    .acticles {
-      display: flex;
-      min-width: 150rem;
-      gap: 30px;
-      max-width: max-content;
-    }
-    .blog {
-      max-width: 350px;
-    }
-
-    // svg {
-    //   font-size: 30px;
-    //   position: absolute;
-    // }
-
-    // .left {
-    //   top: 50%;
-    //   left: 0;
-    // }
-  }
 
   h2 {
     display: inline-block;
@@ -51,11 +18,10 @@
     margin: auto;
     background-color: var(--color-grey-2);
     border-radius: 10px;
-  }
 
-  article {
-    // background-color: #fff;
-    border-radius: 10px;
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+    }
   }
 
   .article-title {
@@ -88,6 +54,10 @@
     font-weight: 500;
     color: var(--color-primary-1);
     margin: 10px 0;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 18px;
+    }
   }
   p {
     font-size: 14px;
