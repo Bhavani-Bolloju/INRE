@@ -21,8 +21,12 @@
   --font-heading: "Solway", serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: var(--font-primary);
   background-color: #ffffff;
   color: var(--color-text-1);
@@ -30,26 +34,26 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100px 50vh min-content repeat(5, min-content);
+  grid-template-rows: 10rem 50vh min-content repeat(5, min-content);
   grid-template-columns:
-    [full-start] minmax(40px, 1fr) [center-start] repeat(
+    [full-start] minmax(4rem, 1fr) [center-start] repeat(
       8,
-      [col-start] minmax(min-content, 140px) [col-end]
+      [col-start] minmax(min-content, 14rem) [col-end]
     )
-    [center-end] minmax(40px, 1fr) [full-end];
+    [center-end] minmax(4rem, 1fr) [full-end];
   // row-gap: 30px;
 }
 
 .heading-secondary {
-  font-size: 26px; //30, 36
+  font-size: 2.6rem; //30, 36
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .section-boxes {
   display: grid;
-  grid-template-columns: repeat(9, minmax(min-content, calc(1120px / 9)));
-  column-gap: 40px;
+  grid-template-columns: repeat(9, minmax(min-content, calc(112rem / 9)));
+  column-gap: 4rem;
 
   .section-box--1 {
     grid-column: 1/4;
@@ -65,7 +69,7 @@ body {
 .section-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 40px;
+  gap: 4rem;
   justify-content: center;
   justify-items: center;
   align-content: center;

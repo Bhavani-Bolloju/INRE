@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Navigation.module.scss";
-import { Link } from "react-scroll";
+
+import NavLink from "../ui-components/NavLink";
 
 function Navigation() {
   return (
@@ -11,66 +12,11 @@ function Navigation() {
           <span>innovation in reality</span>
         </div>
         <ul className={classes["nav-list"]}>
-          <li>
-            <Link
-              activeClass={classes["active"]}
-              spy={true}
-              smooth={true}
-              offset={-150}
-              duration={900}
-              to="home"
-            >
-              home
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={classes["active"]}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={800}
-              to="offerings"
-            >
-              our offerings
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={classes["active"]}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={800}
-              to="team"
-            >
-              our team
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={classes["active"]}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={800}
-              to="blogs"
-            >
-              blogs
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass={classes["active"]}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={800}
-              to="contact"
-            >
-              contact us
-            </Link>
-          </li>
+          <NavLink to='home' text='home'/>
+          <NavLink to='offerings' text='our offerings'/>
+          <NavLink to='team' text='our team'/>
+          <NavLink to='blogs' text='blogs'/>
+          <NavLink to='contact' text='contact us'/>
         </ul>
         <button className={classes["register-btn"]}>register now</button>
       </div>

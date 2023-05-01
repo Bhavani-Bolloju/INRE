@@ -2,29 +2,30 @@
   background-color: var(--color-primary-2);
   color: #eee;
   grid-column: full-start/full-end;
-  padding: 50px 0;
-  padding-top: 100px;
-  display: grid;
-  grid-template-columns:
-    1fr [foot-start] repeat(
-      4,
-      [footer-start] minmax(min-content, calc(1300px / 4)) [footer-end]
-    )
-    [foot-end] 1fr;
-
-  grid-template-rows: min-content 10px;
-  justify-items: center;
   width: 100%;
   height: 100%;
-  row-gap: 50px;
+  padding: 80px 0;
+  display: grid;
+  // grid-template-columns: 1fr repeat(3, minmax(min-content, calc(1300px / 4))) 1fr;
+  grid-template-columns: 15% repeat((3, 1fr)) 15%;
+
+  // grid-template-rows: min-content 10px;
+  justify-items: start;
+
+  row-gap: 40px;
 
   &-logo {
-    grid-column: 2/3;
+    // grid-column: 2/3;
+    grid-column: 1/-1;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
+
     .name {
       font-family: var(--font-heading);
+      font-size: 30px;
     }
     .title {
       font-size: 5px;
@@ -38,7 +39,9 @@
   }
 
   &-links__company {
-    grid-column: 3/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    // justify-self: start;
 
     ul {
       list-style: none;
@@ -53,7 +56,7 @@
   }
 
   &-links__useful {
-    grid-column: 4/5;
+    grid-column: 3/4;
 
     ul {
       list-style: none;
@@ -68,7 +71,7 @@
   }
 
   .company-info {
-    grid-column: 5/6;
+    grid-column: 4/5;
     div {
       display: grid;
       grid-template-columns: 20px 1fr;
@@ -112,17 +115,21 @@
   }
 
   .copyrights {
-    grid-column: 1/4;
-    align-self: start;
-    font-size: 12px;
+    grid-column: 2/4;
+    // align-self: flex-start;
+
+    // justify-self: start;
+    font-size: 14px;
   }
   .social-links {
-    grid-column: 4/-1;
+    grid-column: 4/6;
+
     ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
-      font-size: 12px;
+      font-size: 14px;
 
       li {
         display: flex;
@@ -132,7 +139,7 @@
     }
 
     svg {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
