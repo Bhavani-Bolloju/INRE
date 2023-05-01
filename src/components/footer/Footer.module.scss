@@ -2,7 +2,8 @@
   background-color: var(--color-primary-2);
   color: #eee;
   grid-column: full-start/full-end;
-  padding: 40px 0;
+  padding: 50px 0;
+  padding-top: 100px;
   display: grid;
   grid-template-columns:
     1fr [foot-start] repeat(
